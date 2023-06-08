@@ -11,6 +11,7 @@ const Footer = () => {
           <img src={logo} alt="logo" />
           <div className="flexStartCol link-wrapper">
             <div className="flexStartCol left-footer">
+              {/* Contacts */}
               <div className="contacts">
                 <a href="contact">
                   <img src={phone} alt="phone" /> Phone: +1-543-123-4567

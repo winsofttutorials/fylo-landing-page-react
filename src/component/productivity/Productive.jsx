@@ -19,7 +19,7 @@ const Productive = () => {
               Securely share files and folders with friends, family and
               colleagues for live collaboration. No email attachment required!
             </p>
-            <a href="">
+            <a href="https://www.google.com">
               See how Fylo works <img src={badge} alt="icon" />
             </a>
             <div className="testimonial-wrapper">
