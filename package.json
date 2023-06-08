@@ -1,5 +1,6 @@
 {
   "name": "fylo-landing-page-with-two-column-layout-react",
+  "homepage": "https://winsofttutorials/github.io/fylo-landing-page-with-two-column-layout-react",
   "version": "0.1.0",
   "private": true,
   "husky": {
@@ -11,6 +12,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^5.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
@@ -18,13 +20,15 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
-  }, 
+  },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "prettier --write"
     ]
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

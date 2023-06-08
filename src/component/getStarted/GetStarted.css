@@ -1,0 +1,80 @@
+.g-container {
+  background-color: var(--Desaturated-Blue);
+  padding: 70px 8%;
+  color: var(--White);
+  font-family: "Raleway", sans-serif;
+}
+
+.g-container > div {
+  flex: 1;
+}
+
+.getStart-left > :nth-child(1) {
+  font-family: "Raleway", sans-serif;
+}
+
+.getStart-left > :nth-child(2) {
+  color: var(--Light-Gray);
+  max-width: 550px;
+  margin-top: 30px;
+  font-family: "Raleway", sans-serif;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.getStartedFrame {
+  width: 100%;
+  padding: 0 5%;
+}
+
+.getStartedFrame input {
+  width: 100%;
+  padding: 14px 10px;
+  outline: none;
+  border: 1px solid transparent;
+  margin-bottom: 20px;
+  color: var(--Light-Gray);
+}
+::placeholder {
+  color: var(--Light-Gray);
+}
+
+.getStartedFrame input:focus {
+  border-color: var(--Desaturated-Blue);
+}
+
+.getStart-right .button {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 375px) {
+  .g-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 70px 5%;
+  }
+
+  .getStart-left > :nth-child(2) {
+    font-size: 14px;
+    max-width: 280px;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 30px;
+  }
+
+  .getStartedFrame {
+    padding: 0 1%;
+  }
+
+  .getStartedFrame input {
+    width: 250px;
+    padding: 12px 10px;
+    outline: none;
+    border: 1px solid transparent;
+    margin-bottom: 20px;
+  }
+
+  .getStart-right .button {
+    width: 100%;
+    padding: 13px 10px;
+  }
+}
